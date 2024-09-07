@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Dicas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Que tipo de dica você precisa hoje?</h1>
+        <div class="search-container">
+            <input type="text" id="search-bar" placeholder="Digite sua pesquisa...">
+            <button onclick="search()">Buscar</button>
+        </div>
+        <div id="categories-list">
+            <p><strong>Categorias disponíveis:</strong></p>
+            <ul id="categories"></ul>
+        </div>
+    </header>
+    
+    <main>
+        <div id="category-container">
+            <h2 id="category-title">Categoria</h2>
+            <p id="tip-text">Dica aparecerá aqui.</p>
+        </div>
+        
+        <div id="tip-generator">
+            <p id="random-tip">Dica aleatória aparecerá aqui.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p id="footer-text">Genildo Manuel Daniel, <span id="current-date"></span>, Todos os Direitos Reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
